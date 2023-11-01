@@ -9,8 +9,8 @@ import { computed, ref } from 'vue'
 const list = ref([1, 2, 3, 4, 5, 6, 7, 8])
 
 // 基于list派生一个计算属性，从list中过滤出 > 2
-const computedList = computed(() => {
-  return list.value.filter(item => item > 2)
+const computedList=computed(()=>{
+  return list.value.filter(item=>item>2)
 })
 
 // 定义一个修改数组的方法
